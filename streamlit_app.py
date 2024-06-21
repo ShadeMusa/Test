@@ -10,19 +10,14 @@ st.set_page_config(
 )
 
 # Google Tag Manager
-st.markdown(
-    """
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F7PWCV5M56"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-F7PWCV5M56');
-    </script>
-    """,
-    unsafe_allow_html=True,
-)
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F7PWCV5M56"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-F7PWCV5M56');
+</script>
+
 
 
 # -----------------------------------------------------------------------------
