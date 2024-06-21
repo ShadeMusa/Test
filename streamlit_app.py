@@ -165,5 +165,5 @@ GA_TRACKING_CODE = """
   gtag('config', 'G-F7PWCV5M56');
 </script>
 """
-
+st.write("Done")
 st.components.v1.html(GA_TRACKING_CODE)
