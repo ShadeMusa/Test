@@ -154,16 +154,3 @@ for i, country in enumerate(selected_countries):
         )
 
 
-# Google Analytics tracking code
-GA_TRACKING_CODE = """
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F7PWCV5M56"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-F7PWCV5M56');
-</script>
-"""
-st.write("Done")
-st.components.v1.html(GA_TRACKING_CODE)
