@@ -9,16 +9,20 @@ st.set_page_config(
     page_icon=':earth_americas:', # This is an emoji shortcode. Could be a URL too.
 )
 
-# Google Tag Manager
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F7PWCV5M56"></script>
+import os
+import re
+import streamlit as st
+
+code = """
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-F7PWCV5M56');
+  gtag('config', 'YOUR_TRACKING_ID');
 </script>
-
-
+"""
 
 # -----------------------------------------------------------------------------
 # Declare some useful functions.
